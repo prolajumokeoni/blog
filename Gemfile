@@ -18,7 +18,6 @@ gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 
 # Use sqlite3 as the database for Active Record
 
-gem 'sqlite3', '~> 1.4'
 
 # Use Puma as the app server
 
@@ -70,9 +69,14 @@ group :development, :test do
 
 end
 
+group :production do 
 
+  gem 'pg', '~> 1.1' 
+end
 
 group :development do
+
+  gem 'sqlite3'
 
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
 
