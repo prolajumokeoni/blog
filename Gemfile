@@ -62,7 +62,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 
 group :development, :test do
-
+  gem 'sqlite3', '~> 1.4'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
 
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
@@ -71,13 +71,10 @@ end
 
 group :production do 
 
-  gem 'pg', '~> 1.1' 
+  gem 'pg'
 end
 
 group :development do
-
-  gem 'sqlite3'
-
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
 
   gem 'web-console', '>= 4.1.0'

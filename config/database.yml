@@ -25,4 +25,8 @@ production:
   database: db/production.sqlite3
 
 production: 
-  adapter: postgresql username: postgres password: root host: localhost encoding: unicode 
+  adapter: postgresql 
+  username: postgres 
+  password: root 
+  host: localhost 
+  encoding: unicode 
