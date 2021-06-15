@@ -4,6 +4,11 @@
 
 > Blog app where users can edit, delete, read and create new ones.
 
+## live demo
+
+[heroku](https://priscillablog.herokuapp.com/)
+
+
 ## Built With
 
 - Ruby on Rails
