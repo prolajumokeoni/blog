@@ -2,18 +2,16 @@
 <div class="row">
   <% @articles.each do |article| %>
   <div class="col">
-        <div class="card">
-          <div class="card-title">
-            <%= link_to article.title%>
-          </div>
-          <div>
-            <%= article.body %>
+        <div class="row">
+          <div class="card">
+            <div class="card-title">
+              <%= article.title%>
+            </div>
+            <div>
+              <%= article.body %>
+            </div>
           </div>
         </div>
       <% end %>
   <div>
-  <div class="btn btn-light">
-    <%= link_to "New Article", new_article_path %>
-  </div>
-  
 <div>
